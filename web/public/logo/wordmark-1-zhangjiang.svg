@@ -1,0 +1,29 @@
+<svg viewBox="0 0 280 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wordmark 1 · 琥珀原石 + "账匠" -->
+  <defs>
+    <linearGradient id="w1g" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FDB56A"/>
+      <stop offset="50%" stop-color="#F09A1A"/>
+      <stop offset="100%" stop-color="#D6820F"/>
+    </linearGradient>
+    <radialGradient id="w1h" cx="30%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#FFF8EE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FFF8EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- 左侧琥珀原石 -->
+  <path d="M32 4 L56 18 L52 52 L12 52 L8 18 Z"
+        fill="url(#w1g)" stroke="#1F1611" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M14 22 Q32 30 50 22" stroke="#1F1611" stroke-width="1.5" fill="none" opacity="0.55"/>
+  <path d="M14 34 Q32 42 50 34" stroke="#1F1611" stroke-width="1.5" fill="none" opacity="0.45"/>
+  <path d="M14 46 Q32 40 50 46" stroke="#1F1611" stroke-width="1.5" fill="none" opacity="0.35"/>
+  <path d="M32 4 L56 18 L52 52 L12 52 L8 18 Z" fill="url(#w1h)"/>
+  <!-- 分隔线 -->
+  <line x1="72" y1="14" x2="72" y2="50" stroke="#1F1611" stroke-width="1" opacity="0.15"/>
+  <!-- 主文字 -->
+  <text x="86" y="40" font-family="Noto Sans SC, PingFang SC, sans-serif"
+        font-size="26" font-weight="700" fill="#1F1611" letter-spacing="-1">账匠</text>
+  <!-- 副标题 -->
+  <text x="148" y="38" font-family="Noto Sans SC, PingFang SC, sans-serif"
+        font-size="11" font-weight="400" fill="#4A3C2E" letter-spacing="0.5">AI 财务 · LedgerCraft</text>
+</svg>

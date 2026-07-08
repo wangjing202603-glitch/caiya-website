@@ -1,0 +1,30 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- LOGO E · 翻页 + 弧光 -->
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF8EE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFF8EE" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFF8EE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- 左页（账本左半）-->
+  <path d="M6 16 L32 12 L32 56 L6 52 Z"
+        fill="#FFF8EE" stroke="#1F1611" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 右页（账本右半）-->
+  <path d="M32 12 L58 16 L58 52 L32 56 Z"
+        fill="#FFF8EE" stroke="#1F1611" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 中线（账本中缝）-->
+  <line x1="32" y1="12" x2="32" y2="56" stroke="#1F1611" stroke-width="1" opacity="0.3"/>
+  <!-- 左页文字行（深棕细线）-->
+  <line x1="12" y1="22" x2="28" y2="20" stroke="#4A3C2E" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="28" x2="28" y2="26" stroke="#4A3C2E" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="34" x2="24" y2="32" stroke="#4A3C2E" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="40" x2="26" y2="38" stroke="#4A3C2E" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="46" x2="22" y2="44" stroke="#4A3C2E" stroke-width="1" opacity="0.6"/>
+  <!-- AI 弧光：从左页划向右页 -->
+  <path d="M8 38 Q32 18 56 32" stroke="url(#g5)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M8 38 Q32 18 56 32" stroke="#F09A1A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- 弧光上的"灵"点（琥珀实心圆）-->
+  <circle cx="48" cy="28" r="4" fill="#F09A1A" stroke="#1F1611" stroke-width="1.5"/>
+  <circle cx="48" cy="28" r="1.5" fill="#FFF8EE"/>
+</svg>

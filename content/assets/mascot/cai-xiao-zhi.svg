@@ -1,0 +1,128 @@
+<svg viewBox="0 0 680 640" width="680" height="640" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>财小智 — AI 财务社群代言人偶（暖琥珀版 V2）</title>
+  <desc>一个温暖圆润的 AI 财务伙伴角色，以暖琥珀色为主色调，与网站设计系统完全统一</desc>
+
+  <!-- 背景装饰圆 - 暖琥珀色调 -->
+  <circle cx="340" cy="290" r="248" fill="#FAEEDA" opacity="0.55"/>
+  <circle cx="340" cy="290" r="198" fill="#FAC775" opacity="0.18"/>
+
+  <!-- 浮动装饰元素 - 全部使用网站色板 -->
+  <circle cx="115" cy="165" r="9" fill="#F5AD3C" stroke="#F09A1A" stroke-width="1.5"/>
+  <circle cx="568" cy="138" r="7" fill="#14B8A6"/>
+  <circle cx="92" cy="365" r="6" fill="#F09A1A"/>
+  <circle cx="588" cy="328" r="8" fill="#5EEAD4"/>
+  <rect x="552" y="408" width="16" height="16" rx="4" fill="#F5AD3C" transform="rotate(15 560 416)"/>
+  <rect x="88" y="442" width="14" height="14" rx="4" fill="#14B8A6" transform="rotate(-20 95 449)"/>
+
+  <!-- 小星星装饰 -->
+  <path d="M100 140 L103 136 L106 140 L103 144 Z" fill="#F09A1A" opacity="0.5"/>
+  <path d="M570 280 L573 276 L576 280 L573 284 Z" fill="#14B8A6" opacity="0.5"/>
+
+  <!-- 浮动柱状图 - 琥珀色 -->
+  <g transform="translate(538, 218)">
+    <rect x="0" y="12" width="7" height="20" rx="2" fill="#F5AD3C" opacity="0.7"/>
+    <rect x="11" y="6" width="7" height="26" rx="2" fill="#F5AD3C" opacity="0.7"/>
+    <rect x="22" y="0" width="7" height="32" rx="2" fill="#F09A1A"/>
+  </g>
+
+  <!-- 浮动计算器 - 增长青 -->
+  <g transform="translate(100, 238)">
+    <rect x="0" y="0" width="26" height="30" rx="7" fill="#14B8A6"/>
+    <rect x="4" y="4" width="18" height="8" rx="2" fill="#CCFBF1"/>
+    <circle cx="8" cy="18" r="2.2" fill="#CCFBF1"/>
+    <circle cx="13" cy="18" r="2.2" fill="#CCFBF1"/>
+    <circle cx="18" cy="18" r="2.2" fill="#CCFBF1"/>
+    <circle cx="8" cy="24" r="2.2" fill="#CCFBF1"/>
+    <circle cx="13" cy="24" r="2.2" fill="#CCFBF1"/>
+    <circle cx="18" cy="24" r="2.2" fill="#CCFBF1"/>
+  </g>
+
+  <circle cx="120" cy="490" r="5" fill="#14B8A6" opacity="0.6"/>
+  <circle cx="560" cy="480" r="5" fill="#F5AD3C" opacity="0.8"/>
+
+  <!-- 天线 - 暖深色杆 + 琥珀球 -->
+  <line x1="340" y1="92" x2="340" y2="120" stroke="#3D3B38" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="340" cy="80" r="14" fill="#F09A1A"/>
+  <circle cx="340" cy="80" r="7" fill="#F5AD3C"/>
+
+  <!-- 头部 - 圆润琥珀色 -->
+  <rect x="245" y="118" width="190" height="155" rx="52" fill="#F09A1A"/>
+  <rect x="262" y="124" width="156" height="28" rx="14" fill="#F5AD3C" opacity="0.5"/>
+
+  <!-- 头部侧面耳朵 - 暖深色 -->
+  <circle cx="243" cy="195" r="14" fill="#3D3B38"/>
+  <circle cx="437" cy="195" r="14" fill="#3D3B38"/>
+  <circle cx="243" cy="195" r="6" fill="#F5AD3C"/>
+  <circle cx="437" cy="195" r="6" fill="#F5AD3C"/>
+
+  <!-- 面部屏幕 - 暖米白 -->
+  <rect x="262" y="138" width="156" height="115" rx="32" fill="#FAFAF8"/>
+
+  <!-- 眼睛 - 更大、更灵动，带高光和睫毛 -->
+  <circle cx="300" cy="180" r="18" fill="#1C1A18"/>
+  <circle cx="380" cy="180" r="18" fill="#1C1A18"/>
+  <circle cx="306" cy="174" r="7" fill="#FFFFFF"/>
+  <circle cx="386" cy="174" r="7" fill="#FFFFFF"/>
+  <circle cx="294" cy="187" r="3" fill="#FFFFFF"/>
+  <circle cx="374" cy="187" r="3" fill="#FFFFFF"/>
+
+  <!-- 睫毛 - 女性化细节 -->
+  <path d="M283 167 Q287 162 292 161" fill="none" stroke="#1C1A18" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M397 167 Q393 162 388 161" fill="none" stroke="#1C1A18" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- 微笑 - 更柔和、更宽 -->
+  <path d="M306 215 Q340 238 374 215" fill="none" stroke="#1C1A18" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 腮红 - 更大、更明显 -->
+  <ellipse cx="276" cy="206" rx="15" ry="10" fill="#F0997B" opacity="0.6"/>
+  <ellipse cx="404" cy="206" rx="15" ry="10" fill="#F0997B" opacity="0.6"/>
+
+  <!-- 蝴蝶结 - 更大、更醒目，琥珀色 -->
+  <path d="M340 274 L306 254 L306 294 Z" fill="#F09A1A"/>
+  <path d="M340 274 L374 254 L374 294 Z" fill="#F09A1A"/>
+  <path d="M340 274 L312 260 L312 288 Z" fill="#E08A10" opacity="0.4"/>
+  <path d="M340 274 L368 260 L368 288 Z" fill="#E08A10" opacity="0.4"/>
+  <rect x="330" y="263" width="20" height="22" rx="6" fill="#E08A10"/>
+
+  <!-- 身体 - 更圆润，暖琥珀浅色 -->
+  <rect x="225" y="288" width="230" height="198" rx="72" fill="#F5AD3C"/>
+  <rect x="240" y="410" width="200" height="60" rx="40" fill="#F09A1A" opacity="0.15"/>
+
+  <!-- 腹部面板 - 暖卡片色 -->
+  <rect x="258" y="318" width="164" height="135" rx="52" fill="#F7F6F2"/>
+
+  <!-- 电路装饰 - 增长青 -->
+  <circle cx="290" cy="340" r="3" fill="#14B8A6" opacity="0.4"/>
+  <circle cx="390" cy="340" r="3" fill="#14B8A6" opacity="0.4"/>
+  <line x1="290" y1="343" x2="290" y2="358" stroke="#14B8A6" stroke-width="1.5" opacity="0.3"/>
+  <line x1="390" y1="343" x2="390" y2="358" stroke="#14B8A6" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- 胸前 ¥ 徽章 - 琥珀色 -->
+  <circle cx="340" cy="370" r="38" fill="#F5AD3C"/>
+  <circle cx="340" cy="370" r="38" fill="none" stroke="#F09A1A" stroke-width="3"/>
+  <text x="340" y="385" text-anchor="middle" font-size="40" font-weight="500" fill="#412402" font-family="sans-serif">¥</text>
+
+  <!-- 左臂 - 圆润，琥珀色 -->
+  <rect x="196" y="340" width="34" height="78" rx="17" fill="#F09A1A"/>
+  <circle cx="213" cy="421" r="19" fill="#3D3B38"/>
+
+  <!-- 右臂（举起持币） - 琥珀色 -->
+  <g transform="rotate(28 448 358)">
+    <rect x="431" y="324" width="34" height="68" rx="17" fill="#F09A1A"/>
+  </g>
+  <circle cx="478" cy="310" r="19" fill="#3D3B38"/>
+
+  <!-- 手中金币 - 琥珀色 -->
+  <circle cx="482" cy="294" r="26" fill="#F09A1A"/>
+  <circle cx="482" cy="294" r="26" fill="none" stroke="#E08A10" stroke-width="2.5"/>
+  <text x="482" y="304" text-anchor="middle" font-size="28" font-weight="500" fill="#FAFAF8" font-family="sans-serif">¥</text>
+
+  <!-- 脚 - 圆润，暖深色 -->
+  <rect x="266" y="484" width="60" height="36" rx="18" fill="#3D3B38"/>
+  <rect x="354" y="484" width="60" height="36" rx="18" fill="#3D3B38"/>
+
+  <!-- 名牌 -->
+  <line x1="245" y1="544" x2="435" y2="544" stroke="#DEDDD6" stroke-width="1"/>
+  <text x="340" y="574" text-anchor="middle" font-size="28" font-weight="500" fill="#1C1A18" font-family="sans-serif">财小智</text>
+  <text x="340" y="598" text-anchor="middle" font-size="14" font-weight="400" fill="#6B6B6B" font-family="sans-serif">你的 AI 财务助手</text>
+</svg>

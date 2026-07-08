@@ -1,0 +1,65 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- 财芽 CaiYa · 生产级 LOGO -->
+  <!-- 主体：从账本底线长出的两片嫩芽 + 顶芽琥珀圆点 -->
+  <defs>
+    <!-- 左叶渐变（暖琥珀 → 深琥珀）-->
+    <linearGradient id="leafLeft" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D6820F"/>
+      <stop offset="60%" stop-color="#F09A1A"/>
+      <stop offset="100%" stop-color="#FDB56A"/>
+    </linearGradient>
+    <!-- 右叶渐变（更深，更立体）-->
+    <linearGradient id="leafRight" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#A8650B"/>
+      <stop offset="55%" stop-color="#D6820F"/>
+      <stop offset="100%" stop-color="#F09A1A"/>
+    </linearGradient>
+    <!-- 顶芽径向渐变（高光 → 主色）-->
+    <radialGradient id="bud" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FDB56A"/>
+      <stop offset="100%" stop-color="#F09A1A"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 账本底线（account book baseline）-->
+  <line x1="6" y1="56" x2="58" y2="56"
+        stroke="#1F1611" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 底线下方阴影（立体感）-->
+  <line x1="10" y1="59" x2="54" y2="59"
+        stroke="#1F1611" stroke-width="0.8" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- 左叶：从茎向左上方长出 -->
+  <path d="M32 56
+           C 26 50, 18 44, 12 38
+           C 18 38, 24 42, 30 50
+           C 31.5 52, 32 54, 32 56 Z"
+        fill="url(#leafLeft)" stroke="#1F1611" stroke-width="1.8"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- 左叶叶脉 -->
+  <path d="M30 52 Q 24 46, 16 40"
+        stroke="#1F1611" stroke-width="1" fill="none"
+        opacity="0.4" stroke-linecap="round"/>
+
+  <!-- 右叶：从茎向右上方长出 -->
+  <path d="M32 56
+           C 38 50, 46 44, 52 38
+           C 46 38, 40 42, 34 50
+           C 32.5 52, 32 54, 32 56 Z"
+        fill="url(#leafRight)" stroke="#1F1611" stroke-width="1.8"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- 右叶叶脉 -->
+  <path d="M34 52 Q 40 46, 48 40"
+        stroke="#1F1611" stroke-width="1" fill="none"
+        opacity="0.4" stroke-linecap="round"/>
+
+  <!-- 主茎：从底线向上 -->
+  <line x1="32" y1="56" x2="32" y2="36"
+        stroke="#1F1611" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- 顶芽：琥珀圆点（财务新芽的"芽"）-->
+  <circle cx="32" cy="32" r="5"
+          fill="url(#bud)" stroke="#1F1611" stroke-width="1.5"/>
+  <!-- 顶芽高光 -->
+  <circle cx="30" cy="30" r="1.5"
+          fill="#FFF8EE" opacity="0.85"/>
+</svg>

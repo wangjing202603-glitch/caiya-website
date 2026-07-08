@@ -1,0 +1,15 @@
+{
+  "name": "ai-caiwu-community",
+  "version": "0.0.0",
+  "private": true,
+  "description": "AI 财务社群 · AI 财务知识库（阶段 0：仅文档与模板）",
+  "license": "MIT",
+  "scripts": {
+    "docs:check": "node scripts/check-content.cjs",
+    "embed:rebuild": "node scripts/embed-rebuild.mjs"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

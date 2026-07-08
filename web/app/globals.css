@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ===== 主题：暖琥珀 amber（整站唯一色板，参照 starglowai.com #F09A1A） ===== */
+  :root,
+  [data-theme="amber"] {
+    --background: 40 33% 98%;       /* 暖米白 #FAFAF8 */
+    --foreground: 30 12% 10%;      /* 暖近黑 #1C1A18 */
+    --card: 43 24% 96%;            /* 暖卡片 #F7F6F2 */
+    --card-foreground: 30 12% 10%;
+    --primary: 25 35% 10%;         /* 主按钮 = 近黑 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 33 60% 96%;
+    --secondary-foreground: 25 35% 12%;
+    --muted: 33 30% 96%;
+    --muted-foreground: 25 12% 42%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 33 20% 90%;
+    --input: 33 20% 90%;
+    --ring: 33 95% 51%;
+    --brand-50:  33 100% 97%;
+    --brand-100: 33 100% 93%;
+    --brand-200: 33 100% 86%;
+    --brand-300: 33 100% 72%;
+    --brand-400: 33 95% 60%;
+    --brand-500: 33 95% 51%;       /* 暖琥珀 #F09A1A */
+    --brand-600: 33 90% 44%;
+    --brand-700: 33 85% 36%;
+    --brand-800: 33 80% 28%;
+    --brand-900: 33 75% 22%;
+  }
+  [data-theme="amber"].dark,
+  .dark[data-theme="amber"] {
+    --background: 25 25% 7%;
+    --foreground: 33 40% 96%;
+    --card: 25 25% 10%;
+    --card-foreground: 33 40% 96%;
+    --primary: 33 40% 96%;
+    --primary-foreground: 25 35% 10%;
+    --secondary: 25 20% 14%;
+    --secondary-foreground: 33 40% 96%;
+    --muted: 25 20% 14%;
+    --muted-foreground: 33 12% 65%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 33 40% 98%;
+    --border: 25 20% 18%;
+    --input: 25 20% 18%;
+    --ring: 33 95% 60%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply bg-ink-50 dark:bg-ink-950;
+    font-family: theme("fontFamily.sans");
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* 整站走 Noto Sans SC（无衬线），h1/h2/h3 用 sans + 字重区分层级，不再用 italic */
+  h1, h2, h3 {
+    @apply text-ink-900 dark:text-ink-50;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-900;
+  }
+}
+
+@layer utilities {
+  /* 琥珀径向辉光（hero 焦点），参照 starglowai --gradient-hero */
+  .hero-amber-glow {
+    background: radial-gradient(ellipse at 50% 38%,
+      #f5ad3c 0%, #f09a1a 45%, #e08a10 100%);
+  }
+  /* 琥珀辉光阴影（按钮/卡片 hover），参照 starglowai --glow-primary */
+  .shadow-glow {
+    box-shadow: 0 8px 24px rgba(240, 154, 26, 0.20);
+  }
+  .shadow-glow-strong {
+    box-shadow: 0 12px 36px rgba(240, 154, 26, 0.35);
+  }
+}
+
+@layer components {
+  .prose-kb {
+    @apply max-w-[720px] text-ink-800 dark:text-ink-100;
+  }
+  .prose-kb h1 { @apply text-3xl font-semibold leading-tight mb-6; }
+  .prose-kb h2 { @apply text-2xl font-semibold mt-12 mb-4 scroll-mt-24; }
+  .prose-kb h3 { @apply text-xl font-semibold mt-8 mb-3 scroll-mt-24; }
+  .prose-kb p { @apply leading-[1.85] my-6 text-[17px]; }
+  .prose-kb a { @apply text-brand-600 dark:text-brand-300 underline decoration-brand-300/40 underline-offset-2 hover:text-brand-700; }
+  .prose-kb ul { @apply list-disc my-6 pl-6 space-y-2; }
+  .prose-kb ol { @apply list-decimal my-6 pl-6 space-y-2; }
+  .prose-kb blockquote { @apply my-6 border-l-4 border-brand-300 bg-ink-100/60 dark:bg-ink-800/60 px-4 py-3 italic text-ink-700 dark:text-ink-200; }
+  .prose-kb code:not(pre code) { @apply rounded bg-ink-100 dark:bg-ink-800 px-1.5 py-0.5 text-[0.9em] font-mono text-brand-700 dark:text-brand-300; }
+  .prose-kb pre { @apply rounded-lg bg-ink-900 dark:bg-ink-950 text-ink-50 p-4 overflow-x-auto text-sm my-6; }
+  .prose-kb pre code { @apply font-mono; }
+  .prose-kb table { @apply w-full text-sm my-6 border-collapse; }
+  .prose-kb th, .prose-kb td { @apply border-b border-ink-200 dark:border-ink-700 px-3 py-2 text-left; }
+  .prose-kb th { @apply font-semibold bg-ink-50 dark:bg-ink-900; }
+  .prose-kb img { @apply rounded-lg my-6 max-w-full h-auto; }
+  .prose-kb hr { @apply my-10 border-ink-200 dark:border-ink-800; }
+  .katex-display { @apply my-6 overflow-x-auto; }
+}
+
+@layer utilities {
+  /* ===== 财芽发芽 Logo 动效（品牌签名）===== */
+  .sprout-stem {
+    transform-box: fill-box;
+    transform-origin: bottom center;
+    animation: sprout-stem 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .sprout-leaf-left {
+    transform-box: fill-box;
+    transform-origin: bottom right;
+    animation: sprout-leaf 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+  }
+  .sprout-leaf-right {
+    transform-box: fill-box;
+    transform-origin: bottom left;
+    animation: sprout-leaf 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+  }
+  .sprout-bud {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: sprout-bud 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.65s both;
+  }
+  @keyframes sprout-stem {
+    from { transform: scaleY(0); }
+    to   { transform: scaleY(1); }
+  }
+  @keyframes sprout-leaf {
+    from { transform: scale(0); opacity: 0; }
+    60%  { opacity: 1; }
+    to   { transform: scale(1); opacity: 1; }
+  }
+  @keyframes sprout-bud {
+    0%   { transform: scale(0); opacity: 0; }
+    70%  { transform: scale(1.18); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* ===== CTA 呼吸辉光（参考 starglowai breathe-glow）===== */
+  .animate-breathe-glow {
+    animation: breathe-glow 3.2s ease-in-out infinite;
+  }
+  @keyframes breathe-glow {
+    0%, 100% { box-shadow: 0 4px 12px rgba(240, 154, 26, 0.18); }
+    50%      { box-shadow: 0 14px 38px rgba(240, 154, 26, 0.42); }
+  }
+
+  /* ===== Hero 颗粒纹理（参考 starglowai hero-grain）===== */
+  .hero-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ===== 滚动进入 fade-up ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.reveal-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

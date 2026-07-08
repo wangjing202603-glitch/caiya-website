@@ -1,0 +1,28 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- LOGO C · 嫩芽从账本底线长出 -->
+  <defs>
+    <linearGradient id="g3-l" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D6820F"/>
+      <stop offset="100%" stop-color="#FDB56A"/>
+    </linearGradient>
+    <linearGradient id="g3-r" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D6820F"/>
+      <stop offset="100%" stop-color="#FDB56A"/>
+    </linearGradient>
+  </defs>
+  <!-- 账本底线（页底横线）-->
+  <line x1="6" y1="56" x2="58" y2="56" stroke="#1F1611" stroke-width="2" stroke-linecap="round"/>
+  <!-- 左侧叶（从茎向左上方长）-->
+  <path d="M32 56 Q22 44 14 36 Q22 38 30 50 Q32 52 32 56 Z"
+        fill="url(#g3-l)" stroke="#1F1611" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- 右侧叶（从茎向右上方长）-->
+  <path d="M32 56 Q42 44 50 36 Q42 38 34 50 Q32 52 32 56 Z"
+        fill="url(#g3-r)" stroke="#1F1611" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- 主茎 -->
+  <path d="M32 56 L32 38" stroke="#1F1611" stroke-width="2" stroke-linecap="round"/>
+  <!-- 叶脉 -->
+  <path d="M28 50 Q24 44 18 40" stroke="#1F1611" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M36 50 Q40 44 46 40" stroke="#1F1611" stroke-width="1" fill="none" opacity="0.5"/>
+  <!-- 顶芽（琥珀圆点）-->
+  <circle cx="32" cy="34" r="3" fill="#F09A1A" stroke="#1F1611" stroke-width="1.5"/>
+</svg>

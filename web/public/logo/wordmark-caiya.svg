@@ -1,0 +1,55 @@
+<svg viewBox="0 0 280 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wordmark · 财芽（横版：符号 + 品牌名 + 副标）-->
+  <defs>
+    <linearGradient id="wll" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D6820F"/>
+      <stop offset="100%" stop-color="#FDB56A"/>
+    </linearGradient>
+    <linearGradient id="wlr" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#A8650B"/>
+      <stop offset="100%" stop-color="#F09A1A"/>
+    </linearGradient>
+    <radialGradient id="wb" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FDB56A"/>
+      <stop offset="100%" stop-color="#F09A1A"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 左侧嫩芽符号（复用）-->
+  <line x1="6" y1="56" x2="58" y2="56"
+        stroke="#1F1611" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M32 56
+           C 26 50, 18 44, 12 38
+           C 18 38, 24 42, 30 50
+           C 31.5 52, 32 54, 32 56 Z"
+        fill="url(#wll)" stroke="#1F1611" stroke-width="1.8"
+        stroke-linejoin="round"/>
+  <path d="M32 56
+           C 38 50, 46 44, 52 38
+           C 46 38, 40 42, 34 50
+           C 32.5 52, 32 54, 32 56 Z"
+        fill="url(#wlr)" stroke="#1F1611" stroke-width="1.8"
+        stroke-linejoin="round"/>
+  <line x1="32" y1="56" x2="32" y2="36"
+        stroke="#1F1611" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="5"
+          fill="url(#wb)" stroke="#1F1611" stroke-width="1.5"/>
+  <circle cx="30" cy="30" r="1.5"
+          fill="#FFF8EE" opacity="0.85"/>
+
+  <!-- 分隔线 -->
+  <line x1="72" y1="14" x2="72" y2="50"
+        stroke="#1F1611" stroke-width="1" opacity="0.15"/>
+
+  <!-- 主文字 "财芽" -->
+  <text x="86" y="40"
+        font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif"
+        font-size="28" font-weight="700" fill="#1F1611"
+        letter-spacing="-1">财芽</text>
+
+  <!-- 副标题：英文 + 描述 -->
+  <text x="148" y="38"
+        font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif"
+        font-size="11" font-weight="400" fill="#4A3C2E"
+        letter-spacing="0.5">CaiYa · AI 财务新芽</text>
+</svg>
