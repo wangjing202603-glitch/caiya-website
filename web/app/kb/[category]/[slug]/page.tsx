@@ -5,7 +5,7 @@ import Link from "next/link";
 import { KbSidebar } from "@/components/kb/kb-sidebar";
 import { KbToc } from "@/components/kb/kb-toc";
 import { KbBreadcrumb } from "@/components/kb/kb-breadcrumb";
-import { Paywall } from "@/components/kb/paywall";
+import { MemberGate } from "@/components/kb/invite-unlock";
 import { Callout } from "@/components/kb/callout";
 import {
   getArticle,
@@ -130,9 +130,14 @@ export default async function ArticlePage({ params }: Params) {
           </Callout>
         )}
 
-        {isMember && <Paywall previewMode />}
-
-        <div className="prose-kb mt-6">{mdx}</div>
+        {/* member 文章：正文用 MemberGate 包裹（邀请码解锁）；public 文章：直接渲染 */}
+        {isMember ? (
+          <MemberGate>
+            <div className="prose-kb mt-6">{mdx}</div>
+          </MemberGate>
+        ) : (
+          <div className="prose-kb mt-6">{mdx}</div>
+        )}
 
         {/* 涉税免责声明（CFO 风控：涉税类自动加）*/}
         {category?.slug === "shuiwu-shicao" && <TaxDisclaimer />}
