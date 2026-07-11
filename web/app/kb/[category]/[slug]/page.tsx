@@ -248,7 +248,7 @@ function MemberCta({ categoryName }: { categoryName?: string }) {
           </h3>
           <p className="mt-1.5 text-sm text-ink-600 dark:text-ink-300 leading-relaxed">
             会员含 7 个实战工具交付包（出纳流水 / 付款回单 OCR / 销售大表 / 进口台账…）
-            + 可下载 Excel 模板与 Python 脚本 + AI 问答。¥299/年起。
+            + 可下载 Excel 模板与 Python 脚本 + AI 问答。¥199/年早鸟价。
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <Link

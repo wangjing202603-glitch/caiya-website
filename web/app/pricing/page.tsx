@@ -16,40 +16,54 @@ const PLANS = [
     href: "/kb",
     features: [
       "浏览所有公开文章（9 篇精选）",
-      "AI 问答 20 次 / 日",
       "免费资料：岗位评估表 + 诊断表 + 提示词 5 条",
     ],
   },
   {
     code: "member",
     name: "会员",
-    price: 299,
+    price: 199,
     period: "年",
-    monthly: "约 ¥25/月",
+    monthly: "早鸟价 · 约 ¥17/月",
     highlight: true,
     cta: "立即订阅",
     features: [
-      "全部会员内容（29+ 篇实战，持续更新）",
+      "全部会员内容（46 篇实战，持续更新）",
       "7 个实战工具交付包（出纳/回单/大表/台账…）",
       "可下载 Excel 模板 + Python 脚本",
-      "AI 问答 500 次 / 日（基于知识库 + 引用溯源）",
-      "每周新内容邮件推送",
+      "AI 问答 20 次 / 日（基于知识库 + 引用溯源）",
+      "内部群交流 + 每周新内容推送",
     ],
   },
   {
     code: "pro",
-    name: "Pro 企业",
+    name: "Pro 会员",
+    price: 299,
+    period: "年",
+    monthly: "约 ¥25/月",
+    highlight: false,
+    cta: "升级 Pro",
+    features: [
+      "会员全部权益",
+      "AI 问答 50 次 / 日",
+      "24h 群内优先答疑",
+      "1v1 咨询 1 次 / 年（价值 ¥299）",
+      "新功能优先内测",
+    ],
+  },
+  {
+    code: "enterprise",
+    name: "企业团购",
     price: 2999,
     period: "年",
-    monthly: "或 ¥299/月",
+    monthly: "5 账号起",
     highlight: false,
     cta: "联系开通",
     features: [
-      "会员全部权益",
-      "团队账号（5 席位起）",
+      "Pro 会员全部权益",
+      "团队账号（5 席位起，可加购）",
       "正规发票 + 对公转账",
-      "优先答疑 + 季度复盘会",
-      "1v1 咨询 9 折",
+      "专属客服 + 培训 1 次",
     ],
   },
 ];
@@ -88,12 +102,12 @@ export default function PricingPage() {
           <strong className="font-semibold text-ink-700 dark:text-ink-200">
             7 个能拿走用的工具 + 可下载模板
           </strong>
-          。阶段 1 仅展示，订阅在阶段 2 接入。
+          。试用期 ¥199/年 早鸟价，随手少喝几杯奶茶的事。
         </p>
       </div>
 
-      {/* 3 档套餐 */}
-      <div className="mt-12 grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+      {/* 4 档套餐 */}
+      <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
         {PLANS.map((p) => (
           <div
             key={p.code}

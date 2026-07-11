@@ -279,7 +279,7 @@ export default async function HomePage() {
             <SectionHead
               eyebrow="AI Assistant"
               title="问一句，答一篇"
-              desc="用中文直接提问，AI 基于整座知识库回答，并附上引用来源。免费用户每日 20 次，会员 500 次。"
+              desc="用中文直接提问，AI 基于整座知识库回答，并附上引用来源。会员 20 次/日，Pro 50 次/日。"
             />
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link
@@ -356,8 +356,8 @@ export default async function HomePage() {
                 12 周，长成一个用 AI 的财务人
               </h2>
               <p className="mt-2 text-sm text-white/70 max-w-xl leading-relaxed">
-                ¥99/月起 · 含 AI 问答 500 次 / 日 + 全部会员内容 + 训练营回放。
-                阶段 1 仅展示，订阅在阶段 2 接入。
+                ¥199/年早鸟价 · 含全部会员内容 + 7 个实战工具 + AI 问答。
+                试用期免费体验，订阅即将开通。
               </p>
             </div>
             <Link
