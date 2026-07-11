@@ -13,10 +13,11 @@ const PLANS = [
     monthly: "",
     highlight: false,
     cta: "免费开始",
+    href: "/kb",
     features: [
-      "浏览所有公开文章（9 篇引流）",
+      "浏览所有公开文章（9 篇精选）",
       "AI 问答 20 次 / 日",
-      "引流品：岗位评估表 + 诊断表 + 提示词 5 条",
+      "免费资料：岗位评估表 + 诊断表 + 提示词 5 条",
     ],
   },
   {
@@ -125,7 +126,7 @@ export default function PricingPage() {
               ))}
             </ul>
             <Link
-              href="/auth/sign-in"
+              href={p.code === "free" ? "/kb" : "/pricing"}
               className={
                 "mt-6 inline-flex items-center justify-center gap-1.5 rounded-md px-4 py-2.5 text-sm font-semibold transition " +
                 (p.highlight
