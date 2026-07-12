@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getKbIndex, getArticlesByCategory } from "@/lib/kb";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://aicaiwu.cn";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://caiyaai.com";
   const now = new Date();
 
   // 静态页

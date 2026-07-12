@@ -7,7 +7,7 @@ export default function SignInPage() {
   return (
     <div className="container py-20 max-w-md">
       <div className="rounded-xl border border-ink-200/60 dark:border-ink-800 bg-card p-8">
-        <h1 className="text-2xl font-semibold">登录 AI 财务社群</h1>
+        <h1 className="text-2xl font-semibold">登录财芽</h1>
         <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">
           阶段 1 占位：真实登录在阶段 2 接入 Auth.js（邮箱 / 手机号 / 微信）。
         </p>

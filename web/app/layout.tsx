@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description:
     "财芽 · 让每个财务人都能用上 AI 助理。把重复劳动留给机器，把判断留给自己。",
-  metadataBase: new URL("https://aicaiwu.cn"),
+  metadataBase: new URL("https://caiyaai.com"),
   icons: {
     icon: "/logo/favicon-32.png",
     apple: "/logo/favicon-32.png",
