@@ -1,7 +1,11 @@
-﻿# AI 财务社群 · Web（阶段 1）
+﻿# 财芽 CaiYa · Web（阶段 1 内测版）
 
-> Next.js 14 (App Router) + TypeScript + Tailwind + shadcn 主题。
-> 这是 [`docs/01-vision/路线图.md`](../../docs/01-vision/路线图.md) 阶段 1 的代码骨架。
+> Next.js 14 (App Router) + TypeScript + Tailwind + MDX。
+> **内测已上线**：https://caiya-website.vercel.app
+> GitHub 仓库：`wangjing202603-glitch/caiya-website`（Private，Vercel 自动部署）
+> 部署指南：[`../../docs/02-design/内测部署指南_v1.md`](../../docs/02-design/内测部署指南_v1.md)
+
+财芽 = AI × 财务实战知识库。8 板块 / 46 篇 / Amber Clarity 暖琥珀设计 / 付费墙分层（认知免费 + 实战会员）。
 
 ## 30 秒上手
 
@@ -63,10 +67,11 @@ web/
 
 来自 [`docs/02-design/设计令牌.md`](../../docs/02-design/设计令牌.md)：
 
-- 品牌色 `brand`（信任蓝）：`#2D6BFF` (500)
+- 品牌色 `brand`（暖琥珀）：`#F09A1A` (500) — `hsl(33 95% 51%)`
 - 辅助色 `accent`（增长青）：`#14B8A6`
-- 中性 `ink`：9 级
-- 字体：标题衬线 `Source Han Serif SC` / 正文 `Inter + Noto Sans SC` / 代码 `JetBrains Mono`
+- 中性 `ink`（暖中性）：9 级（`#FAFAF8` / `#F7F6F2` / `#1C1A18` / `#6B6B6B`...）
+- 字体：**Noto Sans SC**（无衬线，全站统一，告别衬线 italic）
+- 设计哲学：**Amber Clarity 琥珀澄明**（暖中性 + 单色琥珀 + 小圆角 ≤8px + 几何精工 + 大留白），参照 starglowai.com
 
 修改令牌请改 `tailwind.config.ts` 和 `app/globals.css`，**不要**在组件里写裸值。
 
@@ -88,6 +93,7 @@ web/
 - AI 真实问答（RAG）：阶段 3
 - 后台 KB 编辑：阶段 5
 - 真实统计（Plausible）：阶段 4
+- 备案域名（caiya.cn / aicaiwu.cn）：内测稳定后买
 
 ## 排错
 
