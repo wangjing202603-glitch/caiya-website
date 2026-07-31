@@ -1,102 +1,87 @@
 {
-  "version": 2,
-  "generatedAt": "2026-07-06",
+  "version": 3,
+  "generatedAt": "2026-07-31",
+  "note": "v3: 5板块重组（方案B）——8旧分类→10新分类（岗位实务为主轴C位）。文章归位由各MDX frontmatter的category字段决定（已批量更新）。children暂留空（Phase1），后续按需补子项。",
   "categories": [
     {
       "id": "00",
-      "slug": "ru-men-zhi-nan",
+      "slug": "primer",
       "name": "入门指南",
-      "description": "新读者从这里开始：知识库怎么用、会员权益、AI 基础认知、术语。",
+      "description": "新读者从这里开始：知识库怎么用、会员权益、AI 基础认知。免费阅读。",
       "order": 0,
       "children": []
     },
     {
       "id": "10",
-      "slug": "shuiwu-shicao",
-      "name": "税务实操",
-      "description": "财务人第一痛点：增值税、企税、个税、以数治税与稽查应对——政策解读 + 实操步骤 + AI 怎么帮。",
+      "slug": "role-cashier",
+      "name": "岗位实务 · 出纳",
+      "description": "银行流水、出纳岗位实操与工具——财务入行第一岗。",
       "order": 10,
-      "children": [
-        { "slug": "zengzhi-shui", "name": "增值税（含数电发票）" },
-        { "slug": "qiye-suodeshui", "name": "企业所得税（含加计扣除）" },
-        { "slug": "geren-suodeshui", "name": "个税（含年度汇算）" },
-        { "slug": "shuiwu-fengkong", "name": "以数治税与稽查应对" }
-      ]
+      "children": []
     },
     {
       "id": "20",
-      "slug": "zhangwu-yu-baobiao",
-      "name": "账务与报表",
-      "description": "全盘账务、资产核算、三表编制、指标分析——含固资/存货/总账岗位实战。",
+      "slug": "role-treasury",
+      "name": "岗位实务 · 资金与往来",
+      "description": "资金会计、应收销售、应付采购、产值日报、付款回单——含真工具实战。",
       "order": 20,
-      "children": [
-        { "slug": "quanpan-zhangwu", "name": "全盘账务" },
-        { "slug": "zichan-hesuan", "name": "资产核算（固资/存货）" },
-        { "slug": "sanbiao-bianzhi", "name": "三表编制" },
-        { "slug": "zhibiao-fenxi", "name": "指标分析与风险识别" }
-      ]
+      "children": []
     },
     {
       "id": "30",
-      "slug": "chengben-yu-yusuan",
-      "name": "成本与预算",
-      "description": "成本核算、成本管控、预算编制——含成本会计岗位与损耗表工具实战。",
+      "slug": "role-tax",
+      "name": "岗位实务 · 税务",
+      "description": "增值税、企税、个税、数电发票、社保、以数治税——申报与合规实操。",
       "order": 30,
-      "children": [
-        { "slug": "chengben-hesuan", "name": "成本核算" },
-        { "slug": "chengben-guankong", "name": "成本管控" },
-        { "slug": "yusuan-bianzhi", "name": "预算编制与执行" }
-      ]
+      "children": []
     },
     {
       "id": "40",
-      "slug": "zijin-yu-wanglai",
-      "name": "资金与往来",
-      "description": "出纳、资金会计、应收销售、应付采购——含 7 个真工具实战（出纳流水/付款回单/产值日报/销售大表）。",
+      "slug": "role-ledger",
+      "name": "岗位实务 · 总账报表",
+      "description": "全盘账务、三表编制、总账审核、跨年费用——全盘综合岗。",
       "order": 40,
-      "children": [
-        { "slug": "chuna", "name": "出纳" },
-        { "slug": "zijin-kuanji", "name": "资金会计" },
-        { "slug": "yingshou", "name": "应收销售" },
-        { "slug": "yingfu", "name": "应付采购" }
-      ]
+      "children": []
     },
     {
       "id": "50",
-      "slug": "ai-gongju-yu-fangfa",
-      "name": "AI 工具与方法",
-      "description": "横切方法论：工具盘点、Prompt 工程、Excel × AI、智能体与 RAG——财务主题之外通用。",
+      "slug": "role-cost",
+      "name": "岗位实务 · 成本",
+      "description": "成本核算、损耗表、BOM、关联方还原——高阶专业岗（依赖存货+总账）。",
       "order": 50,
-      "children": [
-        { "slug": "gongju-pandian", "name": "工具盘点" },
-        { "slug": "prompt-gongcheng", "name": "Prompt 工程" },
-        { "slug": "excel-ai", "name": "Excel × AI 自动化" },
-        { "slug": "zhinengti", "name": "智能体 / RAG / 工作流" }
-      ]
+      "children": []
     },
     {
       "id": "60",
-      "slug": "chuhai-thaiguo",
-      "name": "出海财务·泰国",
-      "description": "泰国财务实战矩阵：认知（道篇）+ 工具与税务（术篇）——进口/出口台账、WHT 预扣税、关联方还原。",
+      "slug": "role-management",
+      "name": "岗位实务 · 管理进阶",
+      "description": "指标分析、经营分析、预算——从做账到用表的决策跨越。",
       "order": 60,
-      "children": [
-        { "slug": "dao", "name": "认知篇（道）" },
-        { "slug": "shu-gongji", "name": "工具术篇" },
-        { "slug": "shu-shuiwu", "name": "税务术篇" }
-      ]
+      "children": []
     },
     {
       "id": "70",
-      "slug": "anli-yu-moban",
-      "name": "案例与模板",
-      "description": "9 岗位 AI 化全景案例 + 7 个工具交付包 + 可下载 Excel 模板与 Python 脚本。",
+      "slug": "ai",
+      "name": "AI 财务实战",
+      "description": "AI 工具盘点、Prompt 工程、主数据与架构——AI × 财务的差异化主战场。",
       "order": 70,
-      "children": [
-        { "slug": "gangwei-quanjing", "name": "岗位 AI 化全景" },
-        { "slug": "gongju-jiaofu", "name": "工具交付包" },
-        { "slug": "excel-moban", "name": "Excel 模板 + Python 脚本" }
-      ]
+      "children": []
+    },
+    {
+      "id": "80",
+      "slug": "industry-thailand",
+      "name": "出海财务 · 泰国",
+      "description": "泰国财务实战矩阵：认知（道篇）+ 工具与税务（术篇）——进口/出口台账、WHT 预扣税、关联方还原。",
+      "order": 80,
+      "children": []
+    },
+    {
+      "id": "90",
+      "slug": "career",
+      "name": "职业发展",
+      "description": "岗位 AI 化全景、职业转型路径——财务人往哪走。",
+      "order": 90,
+      "children": []
     }
   ]
 }
